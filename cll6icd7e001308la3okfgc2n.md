@@ -3,7 +3,7 @@ title: "Project Title: Jenkins Declarative Pipeline with Email Notification Part
 datePublished: Fri Aug 11 2023 11:31:22 GMT+0000 (Coordinated Universal Time)
 cuid: cll6icd7e001308la3okfgc2n
 slug: project-title-jenkins-declarative-pipeline-with-email-notification-part-2
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1691680580883/af9db6da-901b-440e-839f-725cb54a2d23.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1691830607534/cdd44852-52a7-4e8e-8a5e-82543e1e91d7.png
 tags: devops, jenkins, 90daysofdevops, trainwithshubham, cicd-pipelines
 
 ---
