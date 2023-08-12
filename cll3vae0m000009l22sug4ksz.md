@@ -400,6 +400,10 @@ terraform destroy
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1691591893467/fa0bbb05-c20b-466e-b0c3-f73454c7b37f.png align="left")
 
+### 📌 Jenkins Declarative Pipeline with Email Notification Part-2
+
+Follow this [Link](https://dushyantkumark.hashnode.dev/project-title-jenkins-declarative-pipeline-with-email-notification-part-2) for hands-on experience.❄
+
 suggestions are always welcome🔥
 
 # **🌟Conclusion :**
