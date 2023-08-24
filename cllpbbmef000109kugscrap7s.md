@@ -1,5 +1,5 @@
 ---
-title: "Ansible Project: Website Hosting using  Playbook"
+title: "Ansible Project: Website Hosting using  Playbook📚"
 datePublished: Thu Aug 24 2023 15:22:27 GMT+0000 (Coordinated Universal Time)
 cuid: cllpbbmef000109kugscrap7s
 slug: ansible-project-website-hosting-using-playbook
