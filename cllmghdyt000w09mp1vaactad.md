@@ -56,13 +56,13 @@ tags: aws, ansible, devops, 90daysofdevops, trainwithshubham
 
 ### ✔Step 2: Select your OS image and Instance Type
 
-You just have to mention what is the name of your server (Ansible\_Master), after that select type of OS image and number of instances.
+You just have to mention what is the name of your server (Ansible\_Master), after that select the type of OS image and number of instances.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1692688157837/f34f130f-95ae-4efd-a8be-6415291f9129.png align="center")
 
 ### ✔Step 3: Select your Instance type and Create a new Key-pair
 
-Then go to the instance type and select t2.micro free tier eligible. After that select the key pair (login) or you can create new pair.
+Then go to the instance type and select t2.micro free tier eligible. After that select the key pair (login) or you can create a new pair.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1692688754169/832858bd-b96f-4ace-be48-f7b3121317a1.png align="center")
 
@@ -70,7 +70,7 @@ Then go to the instance type and select t2.micro free tier eligible. After that 
 
 ### ✔Step 4: Configure your Network settings and Storage
 
-The next step is the networking setting there is a firewall (security group), select create a security group and provide the name of the security group and give a description. configure the ec2 ebs volume storage.
+The next step is the networking setting there is a firewall (security group), select create a security group provide the name of the security group and give a description. Configure the ebs volume storage.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1692688525396/1d4462f9-1df0-4f5e-a42a-4e5fdf8916de.png align="center")
 
@@ -84,19 +84,19 @@ The next step is the networking setting there is a firewall (security group), se
 
 ### ✔Step 2: Select your OS image and Instance Type
 
-You just have to mention what is the name of your server (Ansible\_Master), after that select type of OS image and number of instances.
+You just have to mention what is the name of your server (Ansible\_Master), and after that select the type of OS image and number of instances.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1692688950885/f9f67b09-951a-4830-9865-856318e204f8.png align="center")
 
 ### ✔Step 3: Select your Instance type and Create a new Key-pair
 
-Then go to the instance type and select t2.micro free tier eligible. After that select the key pair (login) or you can create new pair.
+Then go to the instance type and select t2.micro free tier eligible. After that select the key pair (login) or you can create a new pair.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1692688754169/832858bd-b96f-4ace-be48-f7b3121317a1.png align="center")
 
 ### ✔Step 4: Configure your Network settings and Storage
 
-The next step is the networking setting there is a firewall (security group), select create a security group and provide the name of the security group and give a description. configure the ec2 ebs volume storage.
+The next step is the networking setting there is a firewall (security group), select create a security group and provide the name of the security group and give a description. Configure the ebs volume storage.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1692688983640/eff2cf28-9292-4843-9e17-633fa3d23400.png align="center")
 
@@ -108,7 +108,7 @@ The next step is the networking setting there is a firewall (security group), se
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1692689148641/e49fed0f-a702-4b0d-bc78-24fdfcf3bd13.png align="center")
 
-### ✔Step 2: Install Ansible in Master Server and Check Version
+### ✔Step 2: Install Ansible in the Master Server and Check the Version
 
 * Open **Ansible\_Master\_Server** and run the following commands or create a script for it:
     
@@ -193,7 +193,15 @@ ansible servers -m ping
 
 We use the following commands to check the memory and disk space of remote servers.
 
+```plaintext
+ansible servers -a "free -h"
+```
+
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1692691936793/6d29e482-e202-4ae3-a32d-9c929a8cdc64.png align="center")
+
+```plaintext
+ansible servers -a "df -h"
+```
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1692692175888/e7e35318-9444-499c-91a0-ec37514d7355.png align="center")
 
