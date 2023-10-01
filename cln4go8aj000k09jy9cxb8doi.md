@@ -135,7 +135,7 @@ docker images
 
 ```plaintext
 docker run -d -p 5000:5000 flaskapp-2tier:latest
-docker ps 
+docker ps
 ```
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1695969121603/d36bbb75-7fe7-48e2-bdd1-ec82bfe433c3.png align="left")
@@ -186,6 +186,11 @@ docker network ls
 
 * **Stop previous running containers, before creating new containers.**
     
+    ```plaintext
+    docker kill <container-id-1> <container-id-2>
+    docker rm <container-id-1> <container-id-2>
+    ```
+    
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1695970200010/25c53a99-4614-49e0-a056-f40446c7223d.png align="center")
     
 * **As per the Diagram need a MySQL Container with username and Password to use these commands to run I have to use the Environment Variable in these with -e.**
@@ -202,7 +207,7 @@ sudo docker run -d -p 5000:5000 --network=twotier -e MYSQL_HOST=mysql -e MYSQL_U
 
 ```plaintext
 sudo docker run -d -p 3306:3306 --network=twotier -e MYSQL_DATABASE=myDb -e MYSQL_USER=admin -e MYSQL_PASSWORD=admin -e MYSQL_ROOT_PASSWORD=admin mysql:5.7
-docker ps 
+docker ps
 ```
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1695970669963/910cb0b0-da2c-4b39-9f29-508cba162e3e.png align="left")
@@ -251,7 +256,6 @@ CREATE TABLE messages (
     id INT AUTO_INCREMENT PRIMARY KEY,
     message TEXT
 );
-
 ```
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1695971559838/6b78b7bd-0a16-4810-9f7c-6c38abe2f6e2.png align="left")
