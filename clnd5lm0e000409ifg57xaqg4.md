@@ -8,11 +8,11 @@ tags: aws, kubernetes, 90daysofdevops, trainwithshubham, 2tier-architecture
 
 ---
 
-# **Introduction 🌞:**
+# **🔱 Introduction :**
 
 Kubernetes has emerged as the standard for container orchestration, it allows developers to efficiently manage and scale their applications. In this blog, we will walk you through the process of deploying a 2-tier Flask application using Kubernetes. This setup will consist of a frontend/backend and Database tier, each running in separate containers within a Kubernetes cluster and how these containers communicate. At the end of this guide, you will have a scalable and auto-healing feature architecture for your Flask app.
 
-# 🚀Setup Kubernetes cluster:
+# 🔱 Setup Kubernetes cluster:
 
 * I have already set up a Kubernetes Cluster with master and worker nodes.
     
@@ -23,14 +23,14 @@ Kubernetes has emerged as the standard for container orchestration, it allows de
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1696497056343/a152c0d4-1acd-4039-bb61-6f5768dfa367.png align="left")
 
-# 🚀Docker Images:
+# 🔱 Docker Images:
 
 * I have already pushed the Docker images into the Docker hub, I will use these images to deploy the application. If you want to know how to create, build and push the image to the docker hub, then follow the link "[K8S-Setup-Guide](https://dushyantkumark.hashnode.dev/episode-3-setup-k8s-kubeadm-cluster)".
     
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1695972185970/403c0dd0-ae7a-47c0-8cf6-10bac7df295f.png?auto=compress,format&format=webp align="left")
 
-# 🚀**Deploying Your Application:**
+# 🔱 **Deploying Your Application:**
 
 * Clone your repository code from Git Hub.
     
@@ -251,7 +251,7 @@ kubectl get svc
 vim two-tier-deployment-app.yml
 NOTE (add cluster ip of mysql service)
 - name: MYSQL_HOST
-  value: "10.102.243.87" 
+  value: "10.102.243.87"
 ```
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1696503143702/01530b37-b368-43c5-b698-774e763c2d05.png align="center")
@@ -323,7 +323,7 @@ http://13.235.16.156:30005
 
 ```plaintext
 kubectl get deployment
-kubectl scale deployment two-tier-app --replicas=4 
+kubectl scale deployment two-tier-app --replicas=4
 ```
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1696504274401/789871c2-8b12-4244-9ed1-b4afd50a883d.png align="center")
