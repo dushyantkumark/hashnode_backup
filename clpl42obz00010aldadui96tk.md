@@ -143,11 +143,16 @@ eksctl version
     
 * It will take 15-20 minutes to create the cluster.
     
-* After successfully creating the cluster see the running nodes.
+
+After successfully creating the cluster see the running nodes.
+
+```plaintext
+kubectl get nodes
+```
+
+* You will see your EKS cluster is active.
     
-    ```plaintext
-    kubectl get nodes
-    ```
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1701344333718/545d8a6c-9318-4d8d-ae40-ead0a978f7c4.png align="center")
     
 * You will see this output where you can see the running nodes.
     
