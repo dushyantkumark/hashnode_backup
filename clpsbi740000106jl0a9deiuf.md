@@ -210,7 +210,7 @@ If you check **<mark>terraform.tfstate</mark>** file which is present locally (i
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1701626742616/b437b825-510d-46b5-a720-8fcd0d1b780f.png align="center")
 
-If you want to check your state file use the below command.
+If you want to check your state file use the below command. It pulls the state file from the s3 bucket.
 
 ```plaintext
 terraform state pull
