@@ -33,7 +33,7 @@ Summary view of the terraform files in VS code:
 
 ## 🤖 Create terraform.tf and provider.tf file
 
-We will start with declaring **<mark>terraform.tf</mark>** and **<mark>provider.tf</mark>** file.
+We will start with declaring (**<mark>terraform.tf)</mark>** and (**<mark>provider.tf)</mark>** file.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1701627617079/c9c3b4ec-aac0-405d-8bc6-de50b6beeb58.png align="center")
 
