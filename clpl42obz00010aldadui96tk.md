@@ -136,7 +136,7 @@ eksctl version
 * **Now to create your cluster with this command:**
     
     ```plaintext
-    eksctl create cluster --name 2-tier-app-cluster --region us-east-1 --node-type t2.micro --nodes-min 2 --nodes-max 4
+    eksctl create cluster --name 2-tier-app-cluster --region ap-south-1 --node-type t2.micro --nodes-min 2 --nodes-max 4
     ```
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1701330109623/ceed1200-12f5-4d73-a4c4-fa39fbf71ab3.png align="left")
