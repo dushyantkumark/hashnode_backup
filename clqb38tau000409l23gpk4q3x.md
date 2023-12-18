@@ -119,7 +119,7 @@ Now you enjoy your game application :-)
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1702911938343/f79b09ab-e9c7-4aa5-afe2-b8234a445c55.png align="center")
 
-NOTE:
+### 🎡NOTE: Cluster Creation & Deletion Commands
 
 Perform the cleanup once you are done with the project.
 
