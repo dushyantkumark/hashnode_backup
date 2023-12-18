@@ -84,9 +84,10 @@ kubectl get nodes
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1702911520987/80c56606-b7b2-4fde-95e4-53f938a8849b.png align="center")
 
-Before applying manifest, first, we have to create a particular namespace.
+Before applying manifest, first, we have to check namespaces available in k8s and then create a particular namespace (super-mario).
 
 ```plaintext
+kubectl get ns
 kubectl create namespace super-mario
 or
 kubectl create ns super-mario
@@ -99,6 +100,15 @@ Apply Manifest configuration files deployment.yaml and service.yaml files.
 ```plaintext
 kubectl apply -f deployment.yaml 
 kubectl apply -f services.yaml
+```
+
+Check running pods and services on a super-mario namespace.
+
+```plaintext
+kubectl get po -n super-mario
+or 
+kubectl get pods -n super-mario
+kubectl get svc -n super-mario
 ```
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1702911594179/52245e77-b28d-4289-9d70-10a689b7168e.png align="left")
