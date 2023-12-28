@@ -1,5 +1,5 @@
 ---
-title: "Kubernetes commands you
+title: "🎡Kubernetes commands you
 should definitely know!"
 datePublished: Thu Dec 28 2023 11:41:09 GMT+0000 (Coordinated Universal Time)
 cuid: clqp4wd96000e08l85bcc4cxg
@@ -9,7 +9,7 @@ tags: kubernetes, eks, 90daysofdevops, trainwithshubham, kubernetes-cheatsheet
 
 ---
 
-# 🎡 kubernetes Commands
+# 🎪 kubernetes Commands
 
 Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available. Kubernetes provides you with a framework to run distributed systems resiliently. It takes care of scaling and failover for your application, provides deployment patterns, canary deployments, and more. In this blog post, I will mention Kubernetes commands which we need for most of the use-cases.
 
