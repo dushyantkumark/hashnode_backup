@@ -1,5 +1,5 @@
 ---
-title: "DevSecOps  Project : Swiggy Clone"
+title: "DevSecOps  Project : Swiggy Clone 🍽🥗"
 datePublished: Sun Dec 31 2023 11:26:59 GMT+0000 (Coordinated Universal Time)
 cuid: clqtepp3m000008k0c1j3gmq0
 slug: devsecops-project-swiggy-clone
@@ -8,7 +8,7 @@ tags: cloud-computing, devops, devsecops, 90daysofdevops, trainwithshubham
 
 ---
 
-# Introduction:
+# 📜 Introduction:
 
 In today's fast-paced digital landscape, building and deploying applications not only requires speed but also airtight security. That's where DevSecOps comes into play, blending development, security, and operations into a single, unified process.
 
@@ -18,7 +18,7 @@ Whether you're an experienced developer looking to enhance your DevSecOps skills
 
 Let's start and explore the steps to safeguard your Amazon app while ensuring smooth and efficient deployment process.
 
-## Overview:
+## 📚 Overview:
 
 * **Infrastructure as Code:** Use Terraform to define and manage AWS infrastructure for the application.
     
@@ -33,13 +33,13 @@ Let's start and explore the steps to safeguard your Amazon app while ensuring sm
 * **Application Deployment with Argocd:** Use Argocd for declarative, GitOps-based application deployment on EKS.
     
 
-### Project Resources:
+### 📟 Project Resources:
 
 **GitHub Link:**
 
 [SWIGGY-CLONE-REPOSITORY](https://github.com/dushyantkumark/Swiggy_DevSecOps_Project.git) - Application code & Manifest files.
 
-## Step1: Create IAM Users
+## 📌 Step1: Create IAM Users
 
 Navigate to the **AWS console**
 
@@ -52,7 +52,7 @@ Navigate to the **AWS console**
 * Login to the EC2 instance and follow the below steps.
     
 
-## **Step2: Aws Configuration**
+## 📌**Step2: Aws Configuration**
 
 Install the AWS Cli in your local machine (windows laptop)
 
@@ -67,7 +67,7 @@ Provide your Aws **Access key** and **Secret Access key**
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1704010000122/087d3493-be09-4a11-a265-66fa6f10dc36.png align="center")
 
-## **Step3: Terraform files and Provision Jenkins, sonarqube**
+## **📚 Step3: Terraform files and Provision Jenkins, sonarqube**
 
 **Check terraform Installation in yor laptop :**
 
@@ -81,7 +81,7 @@ terraform --version
 
 This will install Jenkins, Docker, Sonarqube, and Trivy, kubectl, eksctl, aws cli by Terraform with an EC2 instance(t2.xlarge).
 
-### **Terraform commands to provision:**
+### **📌 Terraform commands to provision:**
 
 ```plaintext
 terraform init
@@ -211,9 +211,9 @@ Check the Trivy version in an Ec2 instance.
 trivy --version
 ```
 
-## **Step 4: Install Plugins like JDK, Sonarqube Scanner, NodeJs, and OWASP Dependency Check**
+## **📚 Step 4: Install Plugins like JDK, Sonarqube Scanner, NodeJs, and OWASP Dependency Check**
 
-### **4A — Install Plugin**
+### **🎇 4A — Install Plugin**
 
 Goto Manage **Jenkins** →**Plugins** → **Available Plugins**
 
@@ -231,7 +231,7 @@ Goto Manage **Jenkins** →**Plugins** → **Available Plugins**
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1704012718475/2a5d8e9b-0e32-4cb8-a71b-ceea28a303b1.png align="center")
 
-### **4B: Configure Java and Nodejs in Global Tool Configuration**
+### **🎇 4B: Configure Java and Nodejs in Global Tool Configuration**
 
 Goto Manage **Jenkins** → **Tools** → Install **JDK (17)** and **NodeJs (16)**. Click on **Apply** and **Save**
 
@@ -239,7 +239,7 @@ Goto Manage **Jenkins** → **Tools** → Install **JDK (17)** and **NodeJs (16)
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1704012813957/8e8d0fc4-efd2-4cf3-b666-e903b9ad8387.png align="left")
 
-## **Step 5: Configure Sonar Server in Manage Jenkins**
+## **📚 Step 5: Configure Sonar Server in Manage Jenkins**
 
 Grab the public IP address of your EC2 instance where sonar is running.
 
@@ -247,7 +247,7 @@ Sonarqube works on Port 9000, so &lt;Public IP&gt;:9000.
 
 Go to your Sonarqube server.
 
-### **5A: Create new token in SonarQube**
+### **🎇 5A: Create new token in SonarQube**
 
 Click on **Administration** → **Security** → **Users** → Click on **Tokens** and **Update Token**, → Give it a name, and click on **Generate Token**
 
@@ -263,7 +263,7 @@ Create a token with a name and generate
 
 copy this Token
 
-### 5B: Configure SonarQube Credentials
+### **🎇** 5B: Configure SonarQube Credentials
 
 Goto **Jenkins Dashboard** → **Manage Jenkins** → **Credentials** → Add **secret text**. It should look like this
 
@@ -275,7 +275,7 @@ You will see this page once you click on create
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1704012980748/3dd1c227-66eb-4589-a371-a9037c44b776.png align="left")
 
-### 5C: Configure Sonar Server in Manage Jenkins
+### **🎇** 5C: Configure Sonar Server in Manage Jenkins
 
 Now, go to Dashboard → **Manage Jenkins** → **System** and add like the below image.
 
@@ -287,13 +287,13 @@ Click on Apply and Save.
 
 **Global Tool Configuration** is used to configure different tools that we install using Plugins
 
-### 5D: Configure Sonar Scanner in Manage Jenkins --&gt; Tools
+### **🎇** 5D: Configure Sonar Scanner in Manage Jenkins --&gt; Tools
 
 We will install a sonar scanner in the tools.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1704013124441/630875e9-8f1f-4c21-90f4-79a11b188023.png align="left")
 
-### 5E: Configure Quality gate in SonarQube Server
+### **🎇** 5E: Configure Quality gate in SonarQube Server
 
 In the Sonarqube Dashboard, add a quality gate as well.
 
@@ -323,7 +323,7 @@ Add details:
 <http://jenkins-private-ip:8080>/sonarqube-webhook/
 ```
 
-### 5F:Setup new pipeline with name "devsecops-swiggy"
+### **🎇** 5F:Setup new pipeline with name "devsecops-swiggy"
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1704013450563/139784cd-0d1f-4481-be1f-09bd51276140.png align="center")
 
@@ -400,7 +400,7 @@ You can see the report has been generated, and the status shows as passed. You c
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1704013977579/418eda9e-c80d-4cfa-9392-e686dd43b7cc.png align="left")
 
-## **Step 6: Install OWASP Dependency Check Plugins**
+## **📚 Step 6: Install OWASP Dependency Check Plugins**
 
 Go to **Dashboard** → **Manage Jenkins** → **Plugins** → **OWASP Dependency-Check**. Click on it and install it without restarting.
 
@@ -438,7 +438,7 @@ You will see that in status, a graph will also be generated for vulnerabilities.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1698225711345/5765f1cb-fd23-416b-a25b-2157083bd213.png?auto=compress,format&format=webp&auto=compress,format&format=webp align="left")
 
-## **Step 7: Docker Image Build and Push**
+## **📚 Step 7: Docker Image Build and Push**
 
 We need to install the Docker tool on our system.
 
@@ -517,11 +517,11 @@ Now access your application.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1704015354727/80885ee8-1216-4db3-85be-d2f8bb5b2376.png align="center")
 
-## **Step 8: Creation of EKS Cluster with ArgoCD**
+## **📚 Step 8: Creation of EKS Cluster with ArgoCD**
 
 **Installation of KUBECTL, EKSCTL, AWS CLI are done at the time of ec2 instance creation using terraform.**
 
-### 8A: Creation of EKS Cluster
+### **🎇** 8A: Creation of EKS Cluster
 
 **Now let's configure aws cli credentials for eks creation in us-east-1 region.**
 
@@ -561,7 +561,7 @@ kubectl get no
 kubectl get po
 ```
 
-### 8B: Installing ArgoCD
+### **🎇** 8B: Installing ArgoCD
 
 **Now let's install ArgoCD in the EKS Cluster.**
 
@@ -644,7 +644,7 @@ Pickup the URL and paste it into the web to get the UI as shown below image:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1704016910300/98c59dd5-984d-49f8-bc12-b8906e8ce1c1.png align="left")
 
-**Login Using** ARGO\_PWD**:**
+**Login Using** ARGO\_PWD\*\*:\*\*
 
 ```plaintext
 echo ARGO_PWD
@@ -699,7 +699,7 @@ With the above load balancer, you will be able to see the output as shown in the
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1704017950245/ab595de3-7a11-446f-8026-013859ec3df6.png align="left")
 
-## **Step 9: Clean up your resources**:
+## **🔥 Step 9: Clean up your resources**:
 
 * Delete your Cluster
     
