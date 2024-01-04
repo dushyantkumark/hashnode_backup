@@ -442,9 +442,9 @@ prometheus gui dashboard with new target "node-exporter".
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1704274267181/7c95d3fc-3ad3-4c70-afec-a452a51d760e.png align="center")
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1704274247762/1d5221c1-40e0-4468-8fd5-6a4f17d95e6d.png align="center")
+For real time monitoring, when image build process starts then we get fantastic live monitoring.
 
-Import dashboard to check how Prometheus query used for collecting metrics and then try in your environment with making some changes accordingly.
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1704274247762/1d5221c1-40e0-4468-8fd5-6a4f17d95e6d.png align="center")
 
 Thank you so much for taking the time to read till the end! Hope you found this blog informative.
 
