@@ -10,25 +10,25 @@ tags: redis, prometheus, grafana, trainwithshubham, cadvisor
 
 In this article, we will run a docker container and we will monitor and see the cpu utilization and other metrics in cadvisor, prometheus and grafana dashboard.
 
-## What is cadvisor
+## 🎇 What is cadvisor
 
 (Container Advisor) is an open-source tool developed by Google that provides container-level performance metrics. It is specifically designed to work with containerized environments, such as Docker. `cAdvisor` is used to collect, aggregate, and export information about running containers. This information includes resource usage metrics, performance statistics, and other relevant data.
 
 In the context of Prometheus, `cAdvisor` serves as an exporter. An exporter in the Prometheus ecosystem is a component that collects metrics from a third-party system and makes them available for Prometheus to scrape. In this case, `cAdvisor` collects container metrics and exposes them in a format that Prometheus can understand. Prometheus then scrapes these metrics from the `cAdvisor` service at regular intervals.
 
-## What is Redis
+## 🎇 What is Redis
 
 `Redis` is an open-source, in-memory data structure store used as a database, cache, and message broker. It supports various data structures like strings, hashes, lists, sets, and more. `Redis` is known for its speed and flexibility, making it a popular choice for applications that require fast data access and caching. Additionally, it can be used as a message broker in distributed systems.
 
-## What is Prometheus
+## 🎇 What is Prometheus
 
 `Prometheus` is an open-source monitoring and alerting toolkit designed for reliability and scalability of systems. It is primarily used to collect and store time-series data, making it valuable for monitoring and analyzing the performance of various components in a system.
 
-## What is Grafana
+## 🎇 What is Grafana
 
 `Grafana` is an open-source platform for monitoring and observability. It provides a customizable and interactive dashboard for visualizing data from different sources, including Prometheus. Grafana is widely used to create visually appealing graphs, charts, and alerts, making it easier for users to understand and analyze their system's performance.
 
-### Steps-
+### ✨ Steps-
 
 1. make a ec2 instance of t2.medium, create and allocate elastic ip to ec2.
     
@@ -45,7 +45,7 @@ In the context of Prometheus, `cAdvisor` serves as an exporter. An exporter in t
 
 <mark>this Docker Compose file helps you set up a monitoring environment using Prometheus and cAdvisor to collect and visualize container metrics. Redis is an in-memory data structure store often used as a database, cache, and message broker.</mark>
 
-## Launch Instance & EIasticIP
+## 🎇 Launch Instance & EIasticIP
 
 **Click on the Launch instance option on the right side**
 
@@ -65,7 +65,7 @@ New eip attached to ec2 instance
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1704260328293/0e0d502e-2603-4391-8cfc-f859447b62a8.png align="center")
 
-## Install & Configure Tools
+## 🎇 Install & Configure Tools
 
 First ssh your ec2-instance.
 
@@ -204,7 +204,7 @@ docker ps
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1704268507187/6a99628d-5107-46b8-9e46-886f8c5a5151.png align="center")
 
-### cAdvisor, Prometheus Dashboard
+### ✨ cAdvisor, Prometheus Dashboard
 
 This is the output of cAdvisor, before getting this dashboard open some ports in security group.
 
@@ -226,7 +226,7 @@ There is only one target "prometheus" at all right now , to add new target &lt;&
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1704269625665/38900cef-d8f3-49a9-95dc-f74f599077f1.png align="center")
 
-### Adding new target for docker in prometheus
+### ✨ Adding new target for docker in prometheus
 
 Now open prometheus.yaml file in prometheus directory and add new job\_name with static\_configs.
 
@@ -268,9 +268,9 @@ rate(container_cpu_usage_seconds_total{name="redis"}[1m])
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1704270832245/7cd2bbbf-ccf2-41a4-a9ec-1ca1a008b2d6.png align="left")
 
-## See the metrics of new docker container - tetris-game
+## 🎇 See the metrics of new docker container - tetris-game
 
-### run the docker container directly in terminal
+### ✨ run the docker container directly in terminal
 
 ```plaintext
 docker run -d -p 80:80 --name tetris-game dushyantkumark/tetris-v2:latest
@@ -299,7 +299,7 @@ goto browser and access your gaming application.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1704271442163/75901b69-6317-4a86-995d-51780fa0b5fb.png align="left")
 
-## Setup Grafana Dashboard
+## 🎇 Setup Grafana Dashboard
 
 Follow below commands to install and configure grafana-server.
 
@@ -350,7 +350,7 @@ got to prometheus -&gt; dashbaord -&gt; add new -&gt; paste the ID (10619) and s
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1704272790200/d11440c9-28d7-4a9d-905a-efd95209acfa.png align="left")
 
-## Setup Node Exporter
+## 🎇 Setup Node Exporter
 
 It serves as an agent that runs on the machine to be monitored, capturing information about the host's hardware and operating system metrics. These metrics can include details about CPU usage, memory usage, disk utilization, network statistics, and other essential system-level information.
 
