@@ -356,7 +356,7 @@ It serves as an agent that runs on the machine to be monitored, capturing inform
 
 Update docker-compose.yaml in prometheus directory, docker compose file is used to define and run multi-container Docker applications, this time is for "`node-exporter`".
 
-```plaintext
+```yaml
 version: '3.2'
 services:
   node-exporter:
